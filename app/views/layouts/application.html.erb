@@ -10,6 +10,11 @@
   </head>
 
   <body>
+   <div>
+   	<%= link_to "<h1 style='color: brown;'>Hi Hi RoR</h1>".html_safe, root_path %>
+   	<%= link_to "Go to First", first_path %>
+	<%= link_to "Go to Second", second_path %>
+   </div>
     <%= yield %>
   </body>
 </html>
