@@ -11,9 +11,16 @@
 
   <body>
    <div>
-   	<%= link_to "<h1 style='color: brown;'>Hi Hi RoR</h1>".html_safe, root_path %>
+   	<%= link_to root_path do %>
+   		<h1 style='color: brown;'>Hi Hi RoR</h1>
+   	<% end %>
+   	<%= "Hello R" %>
    	<%= link_to "Go to First", first_path %>
 	<%= link_to "Go to Second", second_path %>
+  	<%= link_to "Posts/1", controller: :home, action: :show_post, id: 1, name: 'pregress' %>
+  	
+  	<%# var %>
+  	<%= @testName %>
    </div>
     <%= yield %>
   </body>

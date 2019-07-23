@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 	
 	get "first", to: "home#first"
 	get "second", to: "home#second"
+	get "posts/:id", to: "home#show_post"
 	
 end
